@@ -119,7 +119,7 @@ const getCss = (duration, timing, direction) => css`
   }
 `;
 
-const SlideRoutes = ({ location, animation, pathList, duration, timing, destroy, children }) => {
+const SlideRoutes = ({ location, animation, pathList, duration, timing, destroy, animationKey, children }) => {
   const cssProps = useMemo(() => {
     return destroy ? { timeout: duration } : { addEndListener() {} };
   }, [destroy, duration]);
@@ -180,7 +180,7 @@ const SlideRoutes = ({ location, animation, pathList, duration, timing, destroy,
       childFactory={(child) => cloneElement(child, { classNames: direction.current })}
       css={getCss(duration, timing, direction.current)}
     >
-      <CSSTransition key={pathname} {...cssProps}>
+      <CSSTransition key={animationKey || pathname} {...cssProps}>
         <Switch location={location}>
           {Children.map(children, (child) => {
             if (!child) return child;
@@ -213,6 +213,7 @@ SlideRoutes.propTypes = {
   duration: t.number,
   timing: t.oneOf(['ease', 'ease-in', 'ease-out', 'ease-in-out', 'linear']),
   destroy: t.bool,
+  animationKey: t.string,
   children: t.node,
 };
 
