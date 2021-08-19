@@ -1,5 +1,5 @@
 {
-  "name": "react-slide-routes",
+  "name": "@thenumber/react-slide-routes",
   "version": "1.0.1",
   "description": "The easiest way to slide React routes",
   "keywords": [
@@ -14,7 +14,7 @@
   ],
   "main": "dist/react-slide-routes.cjs.js",
   "module": "dist/react-slide-routes.esm.js",
-  "repository": "https://github.com/nanxiaobei/react-slide-routes.git",
+  "repository": "https://github.com/realfoto/react-slide-routes.git",
   "author": "nanxiaobei <nanxiaobei@gmail.com>",
   "license": "MIT",
   "files": [
