@@ -22,30 +22,30 @@ const getCss = (duration, timing, direction) => css`
     overflow: hidden;
 
     // back
-    .back-enter {
+    > .back-enter {
       transform: translateX(-100%);
     }
-    .back-enter-active {
+    > .back-enter-active {
       transform: translateX(0);
     }
-    .back-exit {
+    > .back-exit {
       transform: translateX(0);
     }
-    .back-exit-active {
+    > .back-exit-active {
       transform: translateX(100%);
     }
 
     // forward
-    .forward-enter {
+    > .forward-enter {
       transform: translateX(100%);
     }
-    .forward-enter-active {
+    > .forward-enter-active {
       transform: translateX(0);
     }
-    .forward-exit {
+    > .forward-exit {
       transform: translateX(0);
     }
-    .forward-exit-active {
+    > .forward-exit-active {
       transform: translateX(-100%);
     }
   }
@@ -54,30 +54,30 @@ const getCss = (duration, timing, direction) => css`
     overflow: hidden;
 
     // back
-    .back-enter {
+    > .back-enter {
       transform: translateY(-100%);
     }
-    .back-enter-active {
+    > .back-enter-active {
       transform: translateY(0);
     }
-    .back-exit {
+    > .back-exit {
       transform: translateY(0);
     }
-    .back-exit-active {
+    > .back-exit-active {
       transform: translateY(100%);
     }
 
     // forward
-    .forward-enter {
+    > .forward-enter {
       transform: translateY(100%);
     }
-    .forward-enter-active {
+    > .forward-enter-active {
       transform: translateY(0);
     }
-    .forward-exit {
+    > .forward-exit {
       transform: translateY(0);
     }
-    .forward-exit-active {
+    > .forward-exit-active {
       transform: translateY(-100%);
     }
   }
@@ -90,30 +90,30 @@ const getCss = (duration, timing, direction) => css`
     }
 
     // back
-    .back-enter {
+    > .back-enter {
       transform: rotateY(-180deg);
     }
-    .back-enter-active {
+    > .back-enter-active {
       transform: rotateY(0);
     }
-    .back-exit {
+    > .back-exit {
       transform: rotateY(0);
     }
-    .back-exit-active {
+    > .back-exit-active {
       transform: rotateY(180deg);
     }
 
     // forward
-    .forward-enter {
+    > .forward-enter {
       transform: rotateY(180deg);
     }
-    .forward-enter-active {
+    > .forward-enter-active {
       transform: rotateY(0);
     }
-    .forward-exit {
+    > .forward-exit {
       transform: rotateY(0);
     }
-    .forward-exit-active {
+    > .forward-exit-active {
       transform: rotateY(-180deg);
     }
   }
